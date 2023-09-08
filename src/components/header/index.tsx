@@ -1,5 +1,6 @@
 import { Container } from "./style";
-import { MagnifyingGlass } from '@phosphor-icons/react'
+import { MagnifyingGlass, UserCircle, Heart, ShoppingCart } from '@phosphor-icons/react'
+import imgLogo from '../../assets/logo.svg'
 
 export function Header() {
     return (
@@ -18,8 +19,31 @@ export function Header() {
                             </div>
                         </div>
                     </div>
-                    <img src="" alt="" />
-                    <div className="contentRight"></div>
+
+                    <img src={ imgLogo } alt="Logo da empresa" />
+
+                    <div className="contentRight">
+                        <div className="text">
+                            <div className="aboutTheCompany">
+                                <a href="#">Sobre nós</a>
+                                <a href="#">Contato</a>
+                            </div>
+                            <div className="containerProfile">
+                                <div className="register">
+                                    <a href="#">Entre</a>
+                                    <span>ou</span>
+                                    <a href="#">Cadastre-se</a>
+                                    <UserCircle />
+                                </div>
+                                <Heart />
+                                <div className="ContainerShoppingCart">
+                                    <span>04 itens</span>
+                                    <span>R$ 150,00</span>
+                                    <ShoppingCart />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </Container>
            
