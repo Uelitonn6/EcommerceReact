@@ -14,8 +14,8 @@ export function Header() {
                                 <a href="#">Atendimento ao cliente</a>
                             </div>
                             <div className="containerInput">
-                                <input type="text" name="" id="" />
-                                <MagnifyingGlass />
+                                <input placeholder="Pesquise..." type="text" name="" id="" />
+                                <MagnifyingGlass color="#2c487b" size={25} />
                             </div>
                         </div>
                     </div>
@@ -33,13 +33,15 @@ export function Header() {
                                     <a href="#">Entre</a>
                                     <span>ou</span>
                                     <a href="#">Cadastre-se</a>
-                                    <UserCircle />
+                                    <UserCircle color="#2c487b" size={25} />
                                 </div>
-                                <Heart />
-                                <div className="ContainerShoppingCart">
-                                    <span>04 itens</span>
-                                    <span>R$ 150,00</span>
-                                    <ShoppingCart />
+                                <Heart color="#2c487b" size={25}  />
+                                <div className="containerShoppingCart">
+                                    <span><strong>04</strong> itens</span>
+                                    <span>R$ <strong>150,00</strong></span>
+                                    <a href="#">
+                                        <ShoppingCart color="#2c487b" size={25} />
+                                    </a>
                                 </div>
                             </div>
                         </div>
