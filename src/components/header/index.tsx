@@ -1,5 +1,5 @@
 import { Container } from "./style";
-import {} from '@phosphor-icons/react'
+import { MagnifyingGlass } from '@phosphor-icons/react'
 
 export function Header() {
     return (
@@ -14,7 +14,7 @@ export function Header() {
                             </div>
                             <div className="containerInput">
                                 <input type="text" name="" id="" />
-                                <img src="" alt="" />
+                                <MagnifyingGlass />
                             </div>
                         </div>
                     </div>
