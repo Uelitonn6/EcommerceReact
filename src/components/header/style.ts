@@ -104,5 +104,83 @@ export const Container = styled.header`
                 }
             }
         }
+
+        .iconeUserResponsive {
+            display: none;
+        }
+
+        .iconeShoppingCartResponsive {
+            display: none;
+        }
+
+        .iconeList {
+            display: none;
+        }
     } 
+
+    @media (max-width: 500px) {
+        .gridScreen .logoResponsivo {
+            width: 35px;
+        }
+    }
+
+    @media (max-width: 1010px) {
+        height: 8rem;
+
+        .gridScreen {
+            gap: 1rem;
+        }
+
+        .gridScreen .contentLeft {
+            width: 100%;
+        }
+
+        .gridScreen .contentLeft .text .customerInteraction {
+            display: none;
+        }
+
+        .gridScreen .contentRight {
+            display: none;
+        }
+
+        .gridScreen .iconeUserResponsive {
+            display: block;
+        }
+
+        .gridScreen .iconeShoppingCartResponsive {
+            display: block;
+        }
+
+        .gridScreen .iconeList {
+            display: block;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .gridScreen .contentLeft .containerInput {
+            max-width: 290px;
+        }
+    }
+
+    @media (max-width: 1150px) {
+        .gridScreen {
+            justify-content: space-between;
+        }
+
+
+        .gridScreen img {
+            display: none;
+        }
+
+        .gridScreen .logoResponsivo {
+            display: block;
+            width: 50px;
+        }
+    }
+
+    @media (min-width: 1151px) {
+        .gridScreen .logoResponsivo {
+            display: none;
+        }
+    }
 `

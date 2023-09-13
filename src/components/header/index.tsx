@@ -1,5 +1,5 @@
 import { Container } from "./style";
-import { MagnifyingGlass, UserCircle, Heart, ShoppingCart } from '@phosphor-icons/react'
+import { MagnifyingGlass, UserCircle, Heart, ShoppingCart, List, User } from '@phosphor-icons/react'
 import imgLogo from '../../assets/logo.svg'
 
 export function Header() {
@@ -7,6 +7,9 @@ export function Header() {
         <>
             <Container>
                 <div className="gridScreen">
+
+                <img className="logoResponsivo" src={ imgLogo } alt="Logo da empresa" />
+
                     <div className="contentLeft">
                         <div className="text">
                             <div className="customerInteraction">
@@ -20,7 +23,7 @@ export function Header() {
                         </div>
                     </div>
 
-                    <img src={ imgLogo } alt="Logo da empresa" />
+                    <img  src={ imgLogo } alt="Logo da empresa" />
 
                     <div className="contentRight">
                         <div className="text">
@@ -46,6 +49,10 @@ export function Header() {
                             </div>
                         </div>
                     </div>
+                    
+                    <User className="iconeUserResponsive" color="#2a4470" size={30} />
+                    <ShoppingCart className="iconeShoppingCartResponsive" color="#2a4470" size={30} />
+                    <List className="iconeList" color="#2a4470" size={30}/>
                 </div>
             </Container>
            
