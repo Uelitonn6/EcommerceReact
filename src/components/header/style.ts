@@ -40,6 +40,7 @@ export const Container = styled.header`
                     padding: 1rem 2rem;
 
                     input {
+                        width: 100%;
                         background-color: transparent;
                     }
 

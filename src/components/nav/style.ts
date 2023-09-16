@@ -28,4 +28,18 @@ export const Container = styled.nav`
             }
         }
     }
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .gridScreen nav ul {
+            gap: 3rem;
+        }
+
+        .gridScreen nav ul li a {
+            font-size: 1.6rem;
+        }
+    }
 `
