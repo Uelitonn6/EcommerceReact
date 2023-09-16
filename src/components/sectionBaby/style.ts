@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
-export const container = styled.section`
-
+export const Container = styled.section`
+    width: 100%;
+    height: 56rem;
+    
 `
